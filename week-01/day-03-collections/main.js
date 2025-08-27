@@ -58,6 +58,47 @@ function addTask(tasks, title) {
 addTask(tasks, "Zadanie 3");
 console.log(tasks);
 
+function countWords(str) {
+  // 1. Zmiana wszystkich liter na małe ("Ala" i "ala")
+  const lowercaseStr = str.toLowerCase();
+
+  // 2. Podział zdania na tablicę słów.
+  const words = lowercaseStr.split(/\s+/);
+  
+  // 3. Inicjalizacja pustego obiektu do przechowywania liczby wystąpień
+  const wordCounts = {};
+
+  // 4. Iteracja po tablicy słów
+  for (const word of words) {
+    // Sprawdzenie, czy słowo jest puste (np. po podziale zdania z wieloma spacjami)
+    if (word === "") {
+      continue;
+    }
+    
+    // Sprawdzenie, czy słowo już istnieje w obiekcie
+    if (wordCounts[word]) {
+      // Jeśli tak, zwiększenie licznika o 1
+      wordCounts[word] += 1;
+    } else {
+      // Jeśli nie, dodanie nowego klucza i ustawienie licznika na 1
+      wordCounts[word] = 1;
+    }
+  }
+
+  // 5. Zwrócenie obiektu z wynikami
+  return wordCounts;
+}
+
+// Przykład
+const sentence = "Ala ma kota, Ala ma psa.";
+const result = countWords(sentence);
+console.log(result); 
+
+// Drugi przykład
+const sentence2 = "ala ma kota ala";
+const result2 = countWords(sentence2);
+console.log(result2);
+
 function assertEqual(actual, expected, msg) {
   if (Number.isNaN(expected) && Number.isNaN(actual)) return;
   if (actual !== expected) {
