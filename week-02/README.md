@@ -14,3 +14,10 @@
 - ✨ `class Person` — posiada pola `name`, `age` i metodę `introduce()`
 - ✨ `class Book` — posiada pola `title`, `author` i metodę `describe()`
 - ✅ Wszystko pokryte testami
+
+
+### 📅 Dzień 9 — Moduły (import/export)
+- ✨ `arrays.js` — funkcje do pracy z tablicami
+- ✨ `objects.js` — funkcje do pracy z obiektami
+- ✨ `main.js` — importuje i uruchamia testy
+- ✅ Wszystko działa przez `type="module"`
