@@ -21,3 +21,17 @@
 - ✨ `objects.js` — funkcje do pracy z obiektami
 - ✨ `main.js` — importuje i uruchamia testy
 - ✅ Wszystko działa przez `type="module"`
+
+
+# 📅 Dzień 10 – DOM (Document Object Model)
+
+Dzisiaj nauczyłem się podstaw manipulacji **DOM**:
+- wybieranie elementów (`getElementById`, `querySelector`),
+- zmiana treści (`textContent`),
+- zmiana stylów (`element.style`),
+- dodawanie nowych elementów (`createElement`, `appendChild`),
+- obsługa zdarzeń (`addEventListener`).
+
+🔘 W projekcie zrobiłem:
+- przycisk zmieniający nagłówek i kolor tekstu,
+- przycisk dodający nowe elementy do listy.
