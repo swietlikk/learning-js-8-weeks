@@ -23,7 +23,7 @@
 - ✅ Wszystko działa przez `type="module"`
 
 
-# 📅 Dzień 10 – DOM (Document Object Model)
+### 📅 Dzień 10 – DOM (Document Object Model)
 
 Dzisiaj nauczyłem się podstaw manipulacji **DOM**:
 - wybieranie elementów (`getElementById`, `querySelector`),
