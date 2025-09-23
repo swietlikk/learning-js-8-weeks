@@ -1,5 +1,6 @@
 import { sumArray, sumArrayReduce, squareArray, positiveNumbers, avgArray } from "./arrays.js";
 import { describeBook, getAdults, avgAge} from "./objects.js";
+import { findMax, reverseArray } from "./functions.js";
 
 function assertEqual(actual, expected, msg) {
   if (JSON.stringify(actual) !== JSON.stringify(expected)) {
@@ -16,6 +17,8 @@ export function runTests() {
     assertEqual(sumArray([1, 2, 3]), 6, "sumArray");
     assertEqual(sumArrayReduce([2, 2, 4]), 8, "sumArray");
     assertEqual(squareArray([2, 3]), [4, 9], "squareArray");
+    assertEqual(positiveNumbers([-2, -1, 0, 1, 2]), [1, 2], "positiveNumbers");
+    assertEqual(avgArray([1, 2, 3, 4, 5, 6]), 3.5, "avgArray");
 
     // objects.js
     assertEqual(describeBook({ title: "Hobbit",author: "J.R.R. Tolkien", pages: 300 }), ["title", "author", "pages"], "describeBook");
@@ -36,6 +39,8 @@ export function runTests() {
   26,
   "avgAge"
 );
+    assertEqual(reverseArray([1, 2, 3, 4, 5, 6])[reverseArray]);
+    assertEqual(findMax([1, 2, 3, 4, 5]), 5, "findMax");
 
     log("✅ Wszystkie testy przeszły!");
   } catch (e) {
