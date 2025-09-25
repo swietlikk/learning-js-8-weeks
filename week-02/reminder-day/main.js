@@ -1,12 +1,34 @@
 import { sumArray, sumArrayReduce, squareArray, positiveNumbers, avgArray } from "./arrays.js";
 import { describeBook, getAdults, avgAge} from "./objects.js";
-import { findMax, reverseArray } from "./functions.js";
+import { countChars, findMax, reverseArray } from "./functions.js";
+
+document.getElementById("btn1").addEventListener("click", () => {
+  document.getElementById("output").textContent = "Kliknięto!";
+});
+
+document.getElementById("addBtn").addEventListener("click", () => {
+  const input = document.getElementById("textInput");
+  const text = input.value.trim();
+
+  if (text) {
+    const li = document.createElement("li");
+    li.textContent = text;
+    document.getElementById("list").appendChild(li);
+    input.value = "";
+  }
+});
+
+document.getElementById("colorBtn").addEventListener("click", () => {
+  document.body.style.backgroundColor =
+    document.body.style.backgroundColor === "lightblue" ? "white" : "lightblue";
+});
 
 function assertEqual(actual, expected, msg) {
   if (JSON.stringify(actual) !== JSON.stringify(expected)) {
     throw new Error(`❌ ${msg} -> expected ${JSON.stringify(expected)}, got ${JSON.stringify(actual)}`);
   }
 }
+
 
 export function runTests() {
   const lines = [];
@@ -41,6 +63,7 @@ export function runTests() {
 );
     assertEqual(reverseArray([1, 2, 3, 4, 5, 6])[reverseArray]);
     assertEqual(findMax([1, 2, 3, 4, 5]), 5, "findMax");
+    assertEqual(JSON.stringify(countChars("hello")), "{\"h\":1,\"e\":1,\"l\":2,\"o\":1}", "countChars");
 
     log("✅ Wszystkie testy przeszły!");
   } catch (e) {
