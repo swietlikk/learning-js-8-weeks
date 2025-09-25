@@ -35,3 +35,32 @@ Dzisiaj nauczyłem się podstaw manipulacji **DOM**:
 🔘 W projekcie zrobiłem:
 - przycisk zmieniający nagłówek i kolor tekstu,
 - przycisk dodający nowe elementy do listy.
+
+
+## 📚 Dzień powtarzający (Tydzień 2)
+
+Drugi tydzień zakończyłem powtórką wszystkich kluczowych zagadnień z **tablic, obiektów, pętli i DOM**.  
+Przerobiłem ćwiczenia i dodałem testy, aby upewnić się, że wszystkie funkcje działają poprawnie.
+
+### 🔹 Zadania z tablic
+- `sumArray(arr)` – sumowanie elementów tablicy.
+- `sumArrayReduce(arr)` – sumowanie elementów tablicy z użyciem `.reduce`.
+- `squareArray(arr)` – podniesienie wszystkich elementów do kwadratu.
+- `positiveNumbers(arr)` – filtrowanie tylko dodatnich liczb.
+- `avgArray(arr)` – średnia z elementów tablicy.
+- `reverseArray(arr)` – odwracanie kolejności elementów w tablicy.
+- `findMax(arr)` – znajdowanie największej liczby w tablicy.
+
+### 🔹 Zadania z obiektów
+- `describeBook(book)` – opis książki w formacie  
+  `"Książka Hobbit (300 stron) – autor J.R.R. Tolkien"`.
+- `getAdults(users)` – zwraca tylko osoby pełnoletnie z tablicy użytkowników.
+- `avgAge(users)` – zwraca średni wiek wszystkich użytkowników.
+
+### 🔹 Zadania dodatkowe / mieszane
+- `countChars(str)` – liczy liczbę wystąpień każdej litery w stringu.
+
+### 🔹 DOM – proste operacje
+- Dodanie przycisku i `div #output`, który po kliknięciu pokazuje komunikat *"Kliknięto!"*.
+- Formularz z inputem i przyciskiem, który dodaje nowy element `<li>` do listy `<ul>`.
+- Przycisk "Zmień kolor", który zmienia kolor tła strony.
